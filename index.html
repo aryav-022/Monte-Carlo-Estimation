@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Monte Carlo Estimation</title>
+</head>
+<body>
+    <canvas id="myCanvas">
+        Your browser does not support the HTML5 canvas tag.
+    </canvas>
+
+    <div class="container">
+        <fieldset>
+            <legend for="numOfSamples">Number of Samples</legend>
+            <input type="range" name="samples" class="slider" id="numOfSamples" min="0" max="100000" value="0">
+            <div id="numOfSamplesValue">0</div>
+        </fieldset>
+        <div class="data-item">
+            <div>Number of points outside circle</div>
+            <div class="info" id="outsideInfo"></div>
+        </div>
+        <div class="data-item">
+            <div>Number of points inside circle</div>
+            <div class="info" id="insideInfo"></div>
+        </div>
+        <div class="data-item">
+            <div>PI</div>
+            <div class="info" id="result"></div>
+        </div>
+        <footer>
+            Made by Aryav Bhola
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
